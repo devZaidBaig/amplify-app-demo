@@ -4,11 +4,11 @@ frontend:
     preBuild:
       commands:
         - npm ci
-    build
+    build:
       commands:
         - npm run build
   artifacts:
-    baseDerectory: build
+    baseDirectory: build
     files:
       - "**/*"
   cache:
